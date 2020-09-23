@@ -1,0 +1,130 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background-color: black;
+}
+body{
+	background-color: black;
+}
+.navcontainer{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.recentlyAdded,.action,.thriller{
+	height: 400px;
+	color: #A0A0A0 !important;
+}
+.recentlyAddedMovies,.actionMovies,.thrillerMovies{
+	display: flex;
+	justify-content: center;
+}
+.recentlyAddedMoviesContainer h1{
+	margin-top: 20px;
+	color: #A0A0A0 !important;
+}
+.nextButton{
+	background: transparent;
+	border: none;
+	outline: none !important;
+	border-color: transparent;
+	outline-color: transparent;
+	color: #A0A0A0 !important;
+}
+.navcustom{
+	color: #A0A0A0 !important;
+}
+.prevButton{
+	background: transparent;
+	border: none;
+	outline: none !important;
+	border-color: transparent;
+	outline-color: transparent;
+	margin-right: 30px;
+	color: #A0A0A0 !important;
+}
+.title{
+	font-size: 30px;
+}
+.info{
+	display: flex; 
+	justify-content: space-around;	
+}
+.info h1{
+	font-size: 20px;
+}
+.recentlyAddedMoviesContainer{
+	margin-right: 65px;
+	border-radius: 10px;
+	color: #A0A0A0 !important;
+}
+h1{
+	margin: 0px;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+
+.image{
+	height: 180px;
+	width: 250px;
+	border-radius: 10px;
+}
+
+
+.recentlyAddedMoviesContainer:hover{
+	background: black;
+	transition: .3s ease;
+}
+.recentlyAddedMoviesContainer:hover h1{
+	color: white !important;
+}
+.recentlyAddedMoviesContainer:hover .image{
+	height: 200px;
+	width: 280px;
+	border-radius: 10px;
+	transition: .3s ease;
+	box-shadow: none;
+}
+
+iframe{
+	border-radius: 10px;
+}
+#bra5{
+	display: none;
+}
+#bra6{
+	display: none;
+}
+#bra7{
+	display: none;
+}
+#bra8{
+	display: none;
+}
+#ba5{
+	display: none;
+}
+#ba6{
+	display: none;
+}
+#ba7{
+	display: none;
+}
+#ba8{
+	display: none;
+}
+.elementToFadeIn {
+    animation: fadeIn 0.2s linear forwards;
+}
+@keyframes fadeIn {
+ 0% { opacity:0; }
+ 
+ 100% { opacity:1; } 
+}
+
+

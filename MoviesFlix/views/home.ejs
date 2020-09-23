@@ -1,0 +1,113 @@
+<%- include("partials/header")%>
+<link rel="stylesheet" type="text/css" href="/stylesheets/home.css">
+
+<div class="recentlyAdded">
+	<h2>Recently Added</h2>
+	<div class="recentlyAddedMovies">
+
+
+		<% var i=1;%>
+		<button class="prevButton" id="prev">Prev</button>
+		<% movies.forEach(function(movie){%>
+			<a href="/MoviesFlix/<%=movie._id%>">
+				<% if(i<=8){%>
+					<div class="recentlyAddedMoviesContainer" id=<%="bra"+i%> >
+						<h1 class="title"> <%=movie.name%></h1>
+						<div>
+							<img src="<%=movie.imageurl%>" class="image">
+						</div>
+						<div class="info">
+							<h1> <%=movie.releaseYear%></h1>
+							<h1> <%=movie.category%></h1>
+							<h1> <%=movie.imdb%></h1>
+						</div>
+					</div>
+					<% i=i+1;%>
+				<%}%>
+				</a>
+		<%});%>
+		
+		<button class="nextButton" id="next">Next</button>
+	</div>
+</div>
+
+<div class="action">
+	<h2>Action</h2>
+	<div class="actionMovies">
+		<% var i=1;%>
+		<button class="prevButton" id="preva">Prev</button>
+		<% movies.forEach(function(movie){%>
+				<% if(i<=8){%>
+				<a href="/MoviesFlix/<%=movie._id%>">
+					<% if(movie.category=="Action"){%>
+						<div class="recentlyAddedMoviesContainer" id=<%="ba"+i%> >
+						<h1 class="title"> <%=movie.name%></h1>
+						<div>
+							<img src="<%=movie.imageurl%>" class="image">
+						</div>
+						<div class="info">
+						<h1> <%=movie.releaseYear%></h1>
+						<h1> <%=movie.category%></h1>
+						<h1> <%=movie.imdb%></h1>
+						</div>
+						</div>
+
+						<% i=i+1;%>
+					<%}%>
+				<%}%>
+				</a>
+		<%});%>
+		
+		<button class="nextButton" id="nexta">Next</button>
+	</div>
+
+</div>
+
+
+<div class="thriller">
+	<h2>Thriller</h2>
+	<div class="thrillerMovies">
+		<% var i=1;%>
+		<button class="prevButton" id="prev">Prev</button>
+		<% movies.forEach(function(movie){%>
+				<% if(i<=8){%>
+				<a href="/MoviesFlix/<%=movie._id%>">
+					<% if(movie.category=="Thriller"){%>
+						<div class="recentlyAddedMoviesContainer" id=<%="bra"+i%> >
+						<h1 class="title"> <%=movie.name%></h1>
+						<div>
+							<img src="<%=movie.imageurl%>" class="image">
+						</div>
+						<div class="info">
+						<h1> <%=movie.releaseYear%></h1>
+						<h1> <%=movie.category%></h1>
+						<h1> <%=movie.imdb%></h1>
+						</div>
+						</div>
+						<% i=i+1;%>
+					<%}%>
+				<%}%>
+				</a>
+		<%});%>
+		
+		<button class="nextButton" id="next">Next</button>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/home.js"></script>
+
+
+
+<%- include("partials/footer")%>
